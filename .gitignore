@@ -4,3 +4,4 @@ dist/
 ._*
 __pycache__/
 *.pyc
+.idea/
