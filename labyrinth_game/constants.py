@@ -44,7 +44,7 @@ ROOMS = {
     },
     'secret_tunnel': {
         'description': 'Тёмный подземный туннель. Слышен слабый сквозняк — где-то впереди выход.',
-        'exits': {'west': 'garden'},
+        'exits': {'up': 'garden'},
         'items': ['broken_lantern'],
         'puzzle': None
     }
