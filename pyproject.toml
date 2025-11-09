@@ -1,7 +1,7 @@
 [project]
 name = "project1-golubtsov-valerii-m25-555"
 version = "0.1.0"
-description = ""
+description = "Проект №1 Программирование на Python. В рамках проекта была разработана игра Labyrinth Game"
 authors = [
     {name = "Valerii Golubtsov"}
 ]
@@ -9,6 +9,12 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
 ]
+
+[tool.poetry.dependencies]
+python = "^3.13"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.14.1"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
