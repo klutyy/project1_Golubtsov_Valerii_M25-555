@@ -135,7 +135,7 @@ def pseudo_random(seed:int, modulo:int):
     SECOND_NUM = 43758.5453
     prep = math.sin(seed * FIRST_NUM) * SECOND_NUM
     result = prep - math.floor(prep)
-    final = round(result * modulo)
+    final = int(result * modulo)
     return final
 
 
@@ -152,8 +152,8 @@ def trigger_trap(game_state:dict):
             print("Вам удалось уцелеть")
     else:
         i = pseudo_random(0,len(game_state['player_inventory']))
-        game_state['player_inventory'] = game_state['player_inventory'].remove(i)
-        print(f"Вы потеряли {game_state['player_inventory'][i]}")
+        lost_item = game_state['player_inventory'].pop(i)
+        print(f"Вы потеряли {lost_item}")
 
 def random_event(game_state:dict):
     """
@@ -167,7 +167,7 @@ def random_event(game_state:dict):
         inventory = game_state['player_inventory']
         match result:
             case 0:
-                print("Вы нахоидте на полу монетку")
+                print("Вы находите на полу монетку")
                 ROOMS[game_state['current_room']]['items'].append('coin')
             case 1:
                 print("Вы слышите шорох")
