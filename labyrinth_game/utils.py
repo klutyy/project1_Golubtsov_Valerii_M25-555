@@ -158,8 +158,6 @@ def trigger_trap(game_state:dict):
 def random_event(game_state:dict):
     """
     Ф-ция используется для добавления рандома в игру
-    :param game_state:
-    :return:
     """
     SEED = game_state['steps_taken']
     if pseudo_random(SEED,10) != 1:
