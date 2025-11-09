@@ -45,4 +45,4 @@ make project
 | `quit` / `exit`  | Выйти из игры                                            |
 
 # Пример игрового процесса
- [![asciicast](https://asciinema.org/a/1176f052-0065-460c-a056-4a51acdc1103.svg)](https://asciinema.org/a/1176f052-0065-460c-a056-4a51acdc1103)
+[![asciicast](https://asciinema.org/a/rmCtZxYmKCLByQC0CImSEEGE3.svg)](https://asciinema.org/a/rmCtZxYmKCLByQC0CImSEEGE3)
